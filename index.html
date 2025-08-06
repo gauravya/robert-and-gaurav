@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert and Gaurav</title>
+    <style>
+        body {
+            line-height: 1.4;
+            font-size: 16px;
+            padding: 0 10px;
+            margin: 50px auto;
+            max-width: 650px;
+        }
+        #maincontent {
+            max-width: 42em;
+            margin: 15px auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .subscribe-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        #subscribeFrame {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="maincontent" style="margin-top:70px">
+            <h2><strong>Robert and Gaurav</strong></h2>
+            
+            <p>This is a collection of essays written by two friends.</p>
+
+            <h3><strong>Essays</strong></h3>
+            
+            <div class="subscribe-section">
+                <p>You can subscribe to our Substack mirror.</p>
+                <button onclick="toggleSubscribe()">Subscribe</button>
+                
+                <div id="subscribeFrame" style="display: none;">
+                    <iframe src="https://robertandgaurav.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleSubscribe() {
+            var frame = document.getElementById('subscribeFrame');
+            if (frame.style.display === 'none') {
+                frame.style.display = 'block';
+            } else {
+                frame.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
