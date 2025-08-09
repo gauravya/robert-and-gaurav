@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPT-5 — Notes | Robert and Gaurav</title>
+    <style>
+        body {
+            line-height: 1.4;
+            font-size: 16px;
+            padding: 0 10px;
+            margin: 50px auto;
+            max-width: 650px;
+        }
+        #maincontent {
+            max-width: 42em;
+            margin: 15px auto;
+        }
+        a { color: inherit; }
+        a:hover { text-decoration: underline; }
+        .muted { color: #555; }
+        .back { font-size: 0.95rem; }
+        h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+        .meta { margin: 0 0 1.25rem 0; }
+        hr { border: none; border-top: 1px solid #e6e6e6; margin: 1.5rem 0; }
+        ol { padding-left: 1.25rem; }
+
+        /* Media & tweet image helpers */
+        img { max-width: 100%; height: auto; display: block; }
+        figure.media { margin: 1rem 0 1.25rem; }
+        figure.media img { border: 1px solid #eaeaea; border-radius: 6px; background: #fff; }
+        figure.media figcaption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; text-align: center; }
+        .tweet-img { max-width: 100%; height: auto; }
+        .cap { font-size: 0.9rem; color: #666; }
+        .section { margin-top: 1.75rem; }
+        .anchor { color: inherit; text-decoration: none; }
+        .anchor:hover { text-decoration: underline; }
+        .contents { margin: 1rem 0; padding-left: 1rem; }
+        .contents li { margin: 0.2rem 0; }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="maincontent" style="margin-top:70px">
+            <p class="back"><a href="/" aria-label="Back to home">← Back to home</a></p>
+            <h1><strong>GPT-5</strong></h1>
+            <p class="meta muted"><time datetime="2025-08-09">9 August 2025</time> · Notes</p>
+
+            <p><em>(I wrote this quickly for my own edification. It is not original thinking; it condenses takes I have read on X over the past few days. Where relevant I have linked tweets. I hope it is useful for people outside the bubble.)</em></p>
+                
+                <p>Watching an OpenAI launch now feels like watching an Apple keynote in the early 2010s. As a kid, I was giddy about which new, unaffordable iPhone would drop. I will probably look back on my twenties as the years I felt the same mix of excitement and unease about whatever OpenAI released next.</p>
+            </section>
+
+            <section id="reaction" class="section">
+                
+                <p>At first glance on X, before I had access to the model, the mood was mostly disappointment. Some people pushed their timelines out; a few even talked about the end of the pre-training paradigm. The live presentation had a couple of funny slip-ups.</p>
+                <figure id="fig-1" class="media">
+                    <img src="/images/gpt5/graph1.webp" class="tweet-img" />
+                </figure>
+            </section>
+
+            <section id="not-base" class="section">
+                
+                <p>GPT-5 is not a brand-new base model or a push to a new state of the art. It reads more like a product release: a family of models plus a router. You get a general GPT-5 for most tasks, a thinking variant for harder ones, and the system picks which to use for your prompt.</p>
+                <figure class="media">
+                    <img src="/images/gpt5/tweet1.png" class="tweet-img" />
+                    <figcaption><a href="https://x.com/Miles_Brundage/status/1953853900806864920">Source</a></figcaption>
+                </figure>
+            </section>
+                
+                <p>The big jumps have come from pre-training scale. GPT-3 to GPT-4 was roughly a hundred-fold; GPT-4 to 4.5 about an order of magnitude. Epoch suggest GPT-5 is not a major scale-up over 4.5, which also fits the lower cost and faster outputs. That does not mean pre-training is over; it likely means the next 100x run will take time to build.</p>
+                <figure class="media">
+                    <img src="/images/gpt5/tweet2.png" class="tweet-img" />
+                    <figcaption><a href="https://x.com/EpochAIResearch/status/1953883611389702169">Source</a></figcaption>
+                </figure>
+            </section>
+                
+                <p>RL sits after pre-training and shapes behaviour. If we want broader, task-agnostic capability, we probably need far better and far bigger RL environments and rewards. Mechanize call this replication training: thousands of diverse, auto-graded tasks that let you scale RL in the way we once scaled pre-training.</p>
+                <figure class="media">
+                    <img src="/images/gpt5/mechanize.png" class="tweet-img" />
+                    <figcaption><a href="https://www.mechanize.work/blog/the-upcoming-gpt-3-moment-for-rl/">Source</a></figcaption>
+                </figure>
+            </section>
+
+            <section id="updates" class="section">
+                
+                <p>If a release is not state of the art, that alone should not drive large timeline changes. By most signals GPT-5 is on trend for <a href="https://metr.github.io/autonomy-evals-guide/gpt-5-report/">long-horizon tasks</a>, so a cooler launch does not mean the fundamentals are slowing. Expectation management matters: naming, hype, and the race for attention can skew our sense of the pace.</p>
+                <figure class="media">
+                    <img src="/images/gpt5/tweet3.png" class="tweet-img" />
+                    <figcaption><a href="https://x.com/hamandcheese/status/1953649625933787338">Source</a></figcaption>
+                </figure>
+            </section>
+
+            <hr />
+            <p class="muted">Feedback welcome. If something here is off, I will correct it.</p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robert and Gaurav</title>
     <style>
         body {
@@ -29,23 +29,58 @@
         #subscribeFrame {
             margin-top: 20px;
         }
+        .section {
+            margin-top: 2rem;
+        }
+        .list-plain {
+            list-style: none;
+            padding-left: 0;
+        }
+        .list-plain li {
+            margin: 0.25rem 0;
+        }
+        a {
+            color: inherit;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <main>
         <div id="maincontent" style="margin-top:70px">
             <h2><strong>Robert and Gaurav</strong></h2>
-            
             <p>This is a collection of essays written by two friends.</p>
 
-            <h3><strong>Essays</strong></h3>
-            
-            <div class="subscribe-section">
+            <section class="section">
+                <h3><strong>Essays</strong></h3>
+                <!-- Add your essay links here as <li><a href="/path">Title</a></li> -->
+                <ul class="list-plain">
+                    <!-- Example:
+                    <li><a href="/essays/example.html">Example Essay</a></li>
+                    -->
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3><strong>Notes</strong></h3>
+                <ul class="list-plain">
+                    <li><a href="/notes/gpt5.html">GPT-5</a></li>
+                </ul>
+            </section>
+
+            <div class="subscribe-section section">
                 <p>You can subscribe to our Substack mirror.</p>
                 <button onclick="toggleSubscribe()">Subscribe</button>
-                
+
                 <div id="subscribeFrame" style="display: none;">
-                    <iframe src="https://robertandgaurav.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="https://robertandgaurav.substack.com/embed"
+                            width="480"
+                            height="320"
+                            style="border:1px solid #EEE; background:white;"
+                            frameborder="0"
+                            scrolling="no"></iframe>
                 </div>
             </div>
         </div>
